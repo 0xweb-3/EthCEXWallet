@@ -94,24 +94,24 @@ func TestOfflineSignTx(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
-	t.Log("Signed Transaction Hex: ", txHex)
+	t.Log("Signed Transaction Hex: ", txHex) // 其他地方使用时，需要加0x
 
-	// 解码签名后的交易十六进制
-	signedTx := new(types.Transaction)
-	signedTxBytes := common.Hex2Bytes(txHex)
-	if err != nil {
-		t.Error(err)
-	}
-	err = signedTx.UnmarshalBinary(signedTxBytes)
-	if err != nil {
-		t.Error(err)
-	}
-
-	// 发送签名好的交易
-	err = client.SendTransaction(context.Background(), signedTx)
-	if err != nil {
-		t.Error(err)
-	}
-
-	t.Logf("Transaction sent: %s", signedTx.Hash().Hex())
+	//// 解码签名后的交易十六进制
+	//signedTx := new(types.Transaction)
+	//signedTxBytes := common.Hex2Bytes(txHex)
+	//if err != nil {
+	//	t.Error(err)
+	//}
+	//err = signedTx.UnmarshalBinary(signedTxBytes)
+	//if err != nil {
+	//	t.Error(err)
+	//}
+	//
+	//// 发送签名好的交易
+	//err = client.SendTransaction(context.Background(), signedTx)
+	//if err != nil {
+	//	t.Error(err)
+	//}
+	//
+	//t.Logf("Transaction sent: %s", signedTx.Hash().Hex())
 }

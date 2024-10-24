@@ -1,0 +1,23 @@
+name: EthCEXWallet
+eth_rpc_url: https://sepolia.drpc.org
+max_request_time: 5
+chain_id:
+  scroll: 534352
+  polygon: 1101
+  polygon_sepolia: 1442
+  ethereum: 1
+  ethereum_sepolia: 11155111
+  base: 8453
+  base_sepolia: 84532
+  manta: 169
+  manta_sepolia: 3441006
+  mantle_sepolia: 5003
+  mantle: 5000
+  zk_fair_sepolia: 43851
+  zk_fair: 42766
+  okx_sepolia: 195
+  okx: 66
+  op: 10
+  op_test: 11155420
+  linea: 59144
+  arb: 42161

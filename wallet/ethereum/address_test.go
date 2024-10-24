@@ -80,9 +80,15 @@ publicKey a2e624a9cba7cb4b6b2814c8535b11a130f4818027f125c2ecdf23da303491bb822726
 address 0xEB80a127b2b763C631D8ADCeBb0976b190C8C227
 */
 func TestGetAddressByPublicKey(t *testing.T) {
-	addressStr, err := GetAddressByPublicKey(context.Background(), "a2e624a9cba7cb4b6b2814c8535b11a130f4818027f125c2ecdf23da303491bb822726e209563a1046b20d7dccfebd3857d4b5e9e3d079dcfbf4c9737fc06d18")
+	addressStr, err := GetAddressByPublicKey(context.Background(), "2192ad7a4e8df85b6252f3d15e0b594dd09fe03c0885b5f81a420d5fe234fc76bddf2b27a4ef909e28ce4279bdacd20e83227a2231d6687bff8e340a0ecfea8a")
 	if err != nil {
 		t.Error(err)
 	}
 	t.Log(addressStr)
 }
+
+// {
+//7b7ee3b7da1b07755293ffe455adbaeae5681cd203c931b30b0379d0b3bb223f
+//2192ad7a4e8df85b6252f3d15e0b594dd09fe03c0885b5f81a420d5fe234fc76bddf2b27a4ef909e28ce4279bdacd20e83227a2231d6687bff8e340a0ecfea8a
+//0xbe56653861fe159d046a95508105EC36F24fdA1D
+//}
